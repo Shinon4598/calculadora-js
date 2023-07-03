@@ -1,0 +1,95 @@
+:root{
+    --rosa:#E0756D;
+    --rosa_fuerte:#614E4D;
+    --blanco:#fff;
+    --negro:#301918;
+    --salmon:#AD5B55;
+}
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body{
+    background: rgb(224,118,110);
+background: linear-gradient(270deg, rgba(224,118,110,1) 0%, rgba(148,64,58,1) 100%);
+}
+header h1{
+    text-align: center;
+    color: var(--blanco);
+}
+.appBg{
+    background-color: var(--rosa);
+    width: 400px;
+    height: 460px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 15px;
+    position: relative;
+}
+.appBg form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.appBg form div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.tema{
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    right: 10px;
+    top:10px;
+    border-radius: 5px;
+    background-color: var(--negro);
+    border: var(--rosa_fuerte);
+}
+.appBg input[type=textfield]{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: var(--negro);
+    margin-bottom: 15px;
+    color: var(--blanco);
+    font-size: 30px;
+    border-style: solid;
+    border-color: var(--blanco);
+    border-width: 1px 2px 4px 2px;
+}
+.appBg input[type=textfield]:focus{
+    outline: none;
+    background-color: var(--rosa_fuerte);
+}
+.appBg form div input{
+    flex: 1 1;
+    border-radius: 15px;
+    font-size: 30px;
+    color: var(--blanco);
+    margin: 3px;
+}
+
+.appBg form div input:hover, .tema:hover{
+    filter: brightness(0.8);
+    transform: scale(0.97);
+}
+.num{
+    background-color: transparent;
+    border: 1px solid var(--blanco);
+}
+.arit{
+    background-color: var(--negro);
+    border: 1px solid var(--salmon);
+}
+footer{
+    color: var(--rosa_fuerte);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
